@@ -1,4 +1,6 @@
 /home/phillippvensomo/workspace/absi-ims/src/main/java/com/absi/ims/domain/Outlet.java
 /home/phillippvensomo/workspace/absi-ims/src/main/java/com/absi/ims/AbsiImsApplication.java
+/home/phillippvensomo/workspace/absi-ims/src/main/java/com/absi/ims/dao/IMSUserDao.java
 /home/phillippvensomo/workspace/absi-ims/src/main/java/com/absi/ims/domain/IMSUser.java
 /home/phillippvensomo/workspace/absi-ims/src/main/java/com/absi/ims/domain/Product.java
+/home/phillippvensomo/workspace/absi-ims/src/main/java/com/absi/ims/domain/Auditable.java

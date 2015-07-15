@@ -1,1 +1,3 @@
 /home/phillippvensomo/workspace/absi-ims/src/test/java/com/absi/ims/AbsiImsApplicationTests.java
+/home/phillippvensomo/workspace/absi-ims/src/test/java/com/absi/ims/infrastructure/BaseIT.java
+/home/phillippvensomo/workspace/absi-ims/src/test/java/com/absi/ims/dao/IMSUserDaoIT.java

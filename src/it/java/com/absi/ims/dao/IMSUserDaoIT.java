@@ -40,7 +40,7 @@ public class IMSUserDaoIT extends BaseIT {
 
 		IMSUser imsUser = imsUserDao.findOne(user1Id);
 
-		assertEquals(imsUser.getFirstname(), imsUser.getFirstname());
+		assertEquals(imsUser1.getFirstname(), imsUser.getFirstname());
 		assertNotNull(imsUser);
 	}
 
