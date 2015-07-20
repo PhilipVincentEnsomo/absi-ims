@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/utility.css" rel="stylesheet">  
+    <link href="css/style.css" rel="stylesheet">  
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>      
+  </head>
+  <body>   
+      <div class="wrapper-admin"> 
+        <!-- Top Header -->
+        <div class="div-head">
+            <label>BILLS PAYMENT TELLER</label>
+            <label class="teller-name">Jewel Dy</label>
+            <a href="#">Logout</a>
+        </div>
+        <!-- Header -->
+        <div class="header">
+            <img src="images/bdologo.jpg">
+            <h2>Holidays</h2>
+        </div>
+        <!-- Main Body -->
+        <div class="main-body">
+          <div class="sidenav">
+            <label>Admin</label>
+            <ul>
+              <li class=""><a href="#">Billers</a></li>
+              <li class=""><a href="bank.html">Banks</a></li>            
+              <li class="branch"><a href="#">Branch Management</a></li>
+              <li class="branch-child"><a href="branch-mngt.html">Unit Mangement</a></li>
+              <li class="branch-child"><a href="branch-user-mngt.html">User Access Management</a></li>
+              <li class=""><a href="role.html">Role Management</a></li>
+              <li class=""><a href="holiday.html">Holiday</a></li>
+            </ul>
+          </div>
+          <div class="main-body-2">
+              <h1>List of Holiday</h1>
+<!--               <div class="search-options">
+                <input type="text" placeholder="Branch Code" class="field">
+                <input type="text" placeholder="Branch Name" class="field">
+                <input type="text" placeholder="Region" class="field">
+                <input type="button" value="Search" class="search-btn button">
+              </div> -->
+            <table>
+              <tr class="trhead">
+                <td>Date</td>
+                <td>Holiday Desc</td>
+              </tr>
+              <tr onclick="location.href='#'">
+                <td>January 1, 2015</td>
+                <td>New Year</td>
+              </tr>              
+            </table>
+          </div>
+        </div>
+      </div>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+    $('.branch-child').hide();  
+    $('.branch').click(function(){
+      $('.branch-child').toggle();
+    });
+});
+</script>
+
+  </body>
+</html>

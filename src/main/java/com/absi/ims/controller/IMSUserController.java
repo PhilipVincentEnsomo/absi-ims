@@ -1,5 +1,7 @@
 package com.absi.ims.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,12 +15,16 @@ import com.absi.ims.service.IMSUserService;
 @RequestMapping(value = "/ims-user")
 public class IMSUserController {
 
+	private static final Logger logger = LoggerFactory.getLogger(IMSUserController.class);
+
 	@Autowired
 	private IMSUserService imsUserService;
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String loadIMSUserList(Model model) {
 		model.addAttribute("imsUserList", imsUserService.getAllIMSUsers());
+		logger.info("HERE");
+		System.out.println("HERE");
 		return "imsUserList";
 	}
 

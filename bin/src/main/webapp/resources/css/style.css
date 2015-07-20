@@ -1,0 +1,652 @@
+.loginheader{
+	margin: 11% auto 0 auto;
+	text-align: center;
+}
+
+.loginheader img{
+	width: 200px;
+}
+
+.loginheader ul{
+	padding: 0 0 0 30px;
+}
+
+.loginheader ul li{
+	list-style: none;
+	color: #FFFFFF;	
+	margin: 4px 0;
+	text-align: left;
+}
+
+.loginheader ul li label{
+	display: inline-block;
+	width: 70px;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+.loginheader .field{
+  padding: 10px;
+  width: 74%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: none;
+  box-shadow: inset 0px 0px 3px 0px #000;
+  -moz-box-shadow: inset 0px 0px 3px 0px #000;
+  -webkit-box-shadow: inset 0px 0px 3px 0px #000;
+}
+
+.loginheader .btn{
+	border:none;
+	background: #FEB10B;
+	width: 78%;
+	font-weight: 600;
+	padding: 10px 5px;
+	margin: 5px 0 0 0;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: inset 0px 0px 3px 0px #000;
+	-moz-box-shadow: inset 0px 0px 3px 0px #000;
+	-webkit-box-shadow: inset 0px 0px 3px 0px #000;
+}
+
+.loginheader .btn:hover{
+	background: #EAA208;
+}
+
+.loginheader p{
+	margin: 0;
+	font-size: 11px;
+}
+
+.loginwrap{
+	background: #0A2871;
+	max-width: 500px;
+	padding: 10px 0 10px 0;
+	margin: 0 auto;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.loginwrap h2{
+	color: #FEB10B;
+	border-left: 10px solid #FEB10B;
+	padding: 0 0 0 20px;
+	text-align: left;
+}
+
+.wrapper, .wrapper-admin{
+	width: 980px;
+	margin: 0 auto;
+}
+
+.div-head{
+	text-align: right;
+}
+
+.div-head label{
+	font-size: 13px;
+	font-weight: 500;
+	margin:0 5px;
+}
+
+.teller-name{
+	color: #FFFFFF !important;
+	background: #193D93 !important;
+}
+
+.div-head a, .teller-name{
+	font-size: 13px;
+	font-weight: 500 !important;
+	border-bottom-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-moz-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	color: #000000;
+	background: #FEB10B;
+	padding: 5px 10px 10px 10px;
+}
+
+.div-head a:hover{
+	color: #FFFFFF;
+	background: #193D93;
+}
+
+.header img{
+	width: 150px;
+	float: left;
+	margin: 30px 10px;
+}
+
+.header h2{
+	float: right;
+	font-weight: 600;
+	background: #FEB10B;
+	color: #193D93;
+	width: 750px;
+	padding: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.main-body{
+	clear: both;
+	position: relative;
+}
+
+.sidenav{
+	background: #193D93;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	width: 180px;
+	padding: 20px 0;
+	float: left;
+}
+
+.sidenav label{
+	color: #FFFFFF;
+	margin: 0 0 0 10px;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.sidenav ul li{
+	list-style: none;
+	font-size: 13px;
+	padding: 10px;
+	border-top: 1px solid #000;
+	box-shadow: 0px 1px 0px #456AC3 inset;
+	-moz-box-shadow: 0px 1px 0px #456AC3 inset;
+	-webkit-box-shadow: 0px 1px 0px #456AC3 inset;
+}
+
+.active{
+	background: #081F54;
+}
+
+.sidenav a{
+	color: #FEB10B;
+	font-weight: 600;
+}
+
+.sidenav a:hover {
+	color: white;
+}
+
+.main-body-2{
+	position: absolute;
+	width: 780px;
+	right: 0;
+}
+
+.search-options{
+	margin: 30px 0 0 0;
+}
+
+.search-options .field{
+    border: 1px solid #B8B8B8;
+    border-radius: 6px;}
+
+.search-options .field, 
+.search-options .button{
+	padding: 5px;
+}
+
+.main-body-2 table{
+	width: 100%;
+	margin: 20px 0 0 0;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+
+.main-body-2 table .trhead{
+	color: #193D93;
+	background: #FEB10B !important;
+	border-bottom: 2px solid #B2B2B2 !important;
+	font-weight: 600;
+}
+
+.main-body-2 table .trhead:hover{
+	cursor: default !important;
+}
+
+.main-body-2 table td{
+	padding: 9px;
+	border: 1px solid #FEB10B;
+}
+
+.main-body-2 table tr:hover{
+	cursor: pointer;
+}
+
+.main-body-2 table .hoverEffect  tr:hover{
+	background: #F4F4F4;
+}
+
+.main-body-2 table tr{
+	border-bottom: 1px solid rgba(219, 219, 219, 0.46);
+}
+
+.form-biller ul li{
+	list-style: none;
+	margin: 7px 0;
+	font-size: 13px;
+}
+
+.form-biller ul li label{
+	display: inline-block;
+	width: 200px;
+}
+
+.form-biller input{
+	margin: 0 0 0 10px;
+	border: 1px solid #BBBABA;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.form-biller input.inputfield{
+	margin: 0 0 0 10px;
+	border: 1px solid #BBBABA;
+	border-radius: 5px;
+	padding: 5px;
+	width: 200px;
+}
+
+.form-biller select{
+	background: #FFFFFF;
+	margin: 0 0 0 10px;
+	border: 1px solid #BBBABA;
+	border-radius: 5px;
+	padding: 5px;
+	width: 210px;
+}
+
+.search-btn{
+	border: none;
+  	border-radius: 5px;
+  	color: #193D93;
+  	background: #FEB10B;
+  	font-weight: 600;
+}
+
+.btn{
+	border: none !important;
+  	border-radius: 5px;
+  	color: #193D93;
+  	background: #FEB10B;
+  	font-weight: 600;
+  	padding: 10px;
+}
+
+.btn:hover{
+	background: #193D93;
+	color: #FFFFFF;
+}
+
+.view-biller ul li{
+	font-size: 14px;
+	margin: 17px 0 0 30px;
+	list-style: none;
+}
+
+.view-biller label{
+	font-weight: 600;
+	vertical-align: top;
+}
+
+.view-biller ul li span{
+	margin: 0 0 0 10px;
+}
+
+.pay-form ul li:last-child{
+	margin-top: 30px;
+}
+
+.top-btns{
+	margin: 0 0 10px 10px;
+}
+
+.ui-tabs .ui-tabs-nav li{
+	border-top-right-radius: 10px;
+  	border-top-left-radius: 10px;
+}
+
+.border-yellow{
+	border: 1px solid #FEB10B;
+}
+
+/*.ui-jqgrid-view, .ui-state-default.ui-jqgrid-hdiv{
+	width: 700px !important;
+}*/
+
+#tabs{
+	background: #FFFFFF;
+}
+
+.ui-tabs-nav{
+	background: #FFFFFF;
+}
+
+.ui-tabs .ui-tabs-panel{
+	background: #F4F4F4 !important;
+}
+
+.ui-tabs .ui-tabs-nav{
+	padding: 0 !important;
+}
+
+
+#pg_pager:hover{
+	background: #193D93 !important;
+}
+
+.ui-jqgrid-titlebar-close{
+	display: none;
+}
+
+#gbox_list{
+	margin: 10px 0 0 0 !important;
+}
+
+.ui-jqgrid-titlebar{
+	background: #193D93 !important;
+	color: #FEB10B !important;
+	font-size: 16px !important;
+	padding: 10px !important;
+}
+
+.view-biller label{
+	display: inline-block;
+	width: 200px;
+}
+
+.form-biller .input-field{
+	padding: 5px;
+	margin: 0 0 0 5px;
+}
+
+.btn.preview-form{
+	font-size: 12px;
+	margin: 10px 0 0 0;
+}
+
+.paybiller-list a{
+	color: #000000;
+	font-weight: 600;
+}
+
+.error-inline{
+	color: red;
+	font-size: 11px;
+	margin: 0 0 0 5px;
+	display: inline-block;
+	vertical-align: top;
+	width: 320px;
+}
+
+.success-msg{
+	background: #2ECC71;
+	color: #FFFFFF; 
+	padding: 7px 10px;
+	border-radius: 10px;
+}
+
+.failed-msg{
+	background: #E74C3C;
+	color: #FFFFFF; 
+	padding: 7px 10px;
+	border-radius: 10px;
+}
+
+#tabs #tabs-2 ul li{
+	font-size: 14px;
+	margin-left: 30px;
+}
+
+.add-product{
+	font-size: 13px !important;
+}
+
+.product-head{
+	font-size: 19px;
+	font-weight: 600;
+}
+
+.payment-mode-base{
+	background: #E4E4E4;
+	padding: 10px;
+	margin-top: 4px;
+}
+
+.payment-mode-form input{
+	padding: 5px !important;
+	margin-left: 13px;
+	margin-top: 7px;
+}
+
+.amount{
+	margin-top: 7px !important;
+	padding: 5px !important;
+}
+
+.payment-mode{
+	margin-right: 30px;
+}
+
+.payment-mode-base .add{
+	margin: 7px 7px 0 13px;
+}
+
+.field-error {
+		text-align: left;
+		color : red;
+}
+
+.inline-div {
+		display: inline-block;
+}
+
+.divli{
+	background: #F2F2F2;
+	padding: 10px;
+}
+
+.white-border td{
+	border: none !important;
+}
+
+.white-border tr{
+	border-bottom: none !important;
+}
+
+.divli .white-border tr:hover{
+	background: transparent !important;
+	cursor: default !important;
+}
+
+.divli table input{
+	display: inline-block;
+	width: 20px;
+}
+
+.divli table span{
+	display: inline-block;
+	width: 159px;
+   	vertical-align: text-top;
+   	font-weight: 400;
+}
+
+.colon{
+	margin-left: 0 !important;
+	vertical-align: top;
+}
+
+span.ui-widget-content{
+	border: none;
+	background: transparent;
+}
+
+#tabs td{
+	border: none;
+}
+
+.ui-pg-table tr:hover{
+	background: #193D93 !important;
+}
+
+#products-tab ul li.product a{
+	display: block;
+}
+
+#products-tab ul li.product a:hover .name{
+	color: #193d93;
+	font-weight: bold;
+}
+
+#products-tab ul li.product a:hover .code, #products-tab ul li.product a:hover .check{
+	color: #193d93;
+}
+
+#products-tab ul li.product a .code{
+	color: gray;
+}
+
+div.payment-amounts .add {
+	display: block;
+	padding: 5px;
+	background-color: #dddddd;
+	text-align: center;
+	margin-top: 4px;
+	color: gray;
+}
+
+div.payment-amounts .add:hover {
+	font-weight: bold;
+	background-color: silver;
+	color: white;
+	cursor: pointer;
+}
+
+div.payment-amounts .add:hover a {
+	color: white;
+}
+
+
+/*Tooltip*/
+
+.wrapper-tool {
+  color: #555;
+  cursor: help;
+  font-size: 13px;
+  #margin: 100px 75px 10px 75px;
+  position: relative;
+  -webkit-transform: translateZ(0); /* webkit flicker fix */
+  -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+}
+
+.wrapper-tool .tooltip {
+  white-space: pre;
+  margin-left: 274px;
+  background: #1496bb;
+  bottom: 100%;
+  color: #fff;
+  display: block;
+  left: -161px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  opacity: 0;
+  padding: 5px 20px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+  width: 50%;
+  -webkit-transform: translateY(10px);
+     -moz-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+       -o-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all .25s ease-out;
+     -moz-transition: all .25s ease-out;
+      -ms-transition: all .25s ease-out;
+       -o-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+     -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+      -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+       -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+.wrapper-tool .tooltip:before {
+  bottom: -20px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 50%;
+}  
+
+.tooltip{
+	width: 300px !important;
+}
+
+/* CSS Triangles - see Trevor's post */
+.wrapper-tool .tooltip:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-bottom: solid #1496bb 10px;
+  top: -10px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+ }
+  
+.wrapper-tool:hover .tooltip {
+  opacity: 1;
+  position: initial;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .wrapper-tool .tooltip {
+  display: none;
+}
+
+.lte8 .wrapper-tool:hover .tooltip {
+  display: block;
+}
+
+.tooltip ul{
+	padding:  0 0 0 20px;
+}
+
+.tooltip ul li{
+	list-style: disc;
+	margin: 3px 0;
+}
+
+.tooltip ul li:last-child{
+	margin: 3px 0 0 0;
+}
+
+
+.tooltip p{
+	margin: 0;
+}
