@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/utility.css" rel="stylesheet">  
+    <link href="css/style.css" rel="stylesheet">  
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>      
+  </head>
+  <body>   
+      <div class="wrapper-admin"> 
+        <!-- Top Header -->
+        <div class="div-head">
+            <label>BILLS PAYMENT TELLER</label>
+            <label class="teller-name">Jewel Dy</label>
+            <a href="#">Logout</a>
+        </div>
+        <!-- Header -->
+        <div class="header">
+            <img src="images/bdologo.jpg">
+            <h2>Branch User Management</h2>
+        </div>
+        <!-- Main Body -->
+        <div class="main-body">
+          <div class="sidenav">
+            <label>Admin</label>
+            <ul>
+              <li class=""><a href="#">Billers</a></li>
+              <li class=""><a href="bank.html">Banks</a></li>
+              <li class="branch"><a href="#">Branch Management <span>&#9660;</span></a></li>
+              <li class="branch-child"><a href="branch-mngt.html">Unit Mangement</a></li>
+              <li class="branch-child"><a href="branch-user-mngt.html">User Access Management</a></li>
+              <li class=""><a href="role.html">Role Management</a></li>
+              <li class=""><a href="holiday.html">Holiday</a></li>
+            </ul>
+          </div>
+          <div class="main-body-2">
+              <a href="branch-user-mngt.html" class="btn" style="padding:10px; float:right; margin-top:-80px; background: #F5f5f5; margin-right:30px;">Back</a>
+              <h1>Albus Dumbledore</h1>
+            <form class="form-biller view-biller">
+            <ul>
+              <li><label>User Id</label>:<span>b123479a</span></li>
+              <li><label>Firstname</label>:<span>Albus</span></li>
+              <li><label>Middlename</label>:<span>Great</span></li>
+              <li><label>Lastname</label>:<span>Dumbledore</span></li>
+              <li><label>Position</label>:<span>Branch Manager</span></li>
+              <li><label>Email</label>:<span></span></li>
+              <li><label>Account Locked</label>:<span>False</span></li>
+              <li><label>Unit/Branch Assignment</label>:<span>Cagayan de Oro - Osmena</span></li>
+              <li><label>Roles</label>:<span>Admin</span></li>
+              <li><label></label>:<input type="submit" class="btn" value="Edit" /><input type="button" class="btn" value="Cancel"></li>
+            </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+    $('.branch-child').hide();  
+    $('.branch').click(function(){
+      $('.branch-child').toggle();
+    });
+});
+</script>
+
+  </body>
+</html>
