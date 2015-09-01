@@ -6,3 +6,4 @@ target
 *.lock
 *.jasper
 .metadata
+/bin/
