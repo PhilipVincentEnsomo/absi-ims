@@ -10,4 +10,10 @@ public interface IMSUserService {
 
 	List<IMSUser> getAllIMSUsers();
 
+	IMSUser getIMSUserById(Long id);
+
+	void updateIMSUser(IMSUser imsUser);
+
+	void deleteIMSUser(IMSUser imsUser);
+
 }

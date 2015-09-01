@@ -22,15 +22,41 @@ public class IMSUserController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String loadIMSUserList(Model model) {
+		logger.info("Getting all IMS Users");
 		model.addAttribute("imsUserList", imsUserService.getAllIMSUsers());
-		logger.info("HERE");
-		System.out.println("HERE");
 		return "imsUserList";
 	}
 
-	public String loadIMSUserForm(Model model) {
-		model.addAttribute("imsUser", new IMSUser());
+	@RequestMapping(method =  RequestMethod.GET, value = "/view/{id}")
+	public String loadIMSUserForm(Model model, Long id) {
+		IMSUser imsUser = imsUserService.getIMSUserById(id);
+		model.addAttribute("imsUser", imsUser);
 		return "imsUserForm";
+	}
+
+	@RequestMapping(method = RequestMethod.POST, value = "/save")
+	public String saveIMSUser(IMSUser imsUser) {
+		imsUserService.addIMSUser(imsUser);
+		return "redirect:/ims-user";
+	}
+
+	@RequestMapping(method = RequestMethod.GET, value = "/delete")
+	public String deleteIMSUser(Long id) {
+		IMSUser imsUser = imsUserService.getIMSUserById(id);
+		imsUserService.deleteIMSUser(imsUser);
+		return "redirect:/ims-user";
+	}
+
+	@RequestMapping(method = RequestMethod.POST, value = "/update")
+	public String updateIMSUser(IMSUser imsUser) {
+		IMSUser imsUserToUpdate = imsUserService.getIMSUserById(imsUser.getId());
+		
+		imsUser.setCreatedBy(imsUserToUpdate.getCreatedBy());
+		imsUser.setCreatedDate(imsUserToUpdate.getCreatedDate());
+		
+		imsUserService.updateIMSUser(imsUser);
+		
+		return "redirect:/view/" + imsUserToUpdate.getId();
 	}
 
 }

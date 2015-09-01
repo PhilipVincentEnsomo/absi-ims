@@ -7,7 +7,7 @@
 	<definition name="base" template="/WEB-INF/views/commons/layout.jsp">
 		<put-attribute name="title" value="" />
 		<put-attribute name="pageTitle" value="" />
-
+		<put-attribute name="leftMenu" value=""/>
 		<put-attribute name="body" value="" />
 		<put-list-attribute name="styles">
 			<add-attribute value="/resources/css/utility.css" />
@@ -30,6 +30,7 @@
 
 	<definition name="imsUserList" extends="base">
 		<put-attribute name="pageTitle" value="IMS User" />
+		<put-attribute name="leftMenu" value="/WEB-INF/views/commons/left-menu.jsp"/>
 		<put-attribute name="body" value="/WEB-INF/views/ims-user/list.jsp" />
 	</definition>
 </tiles-definitions>
