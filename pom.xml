@@ -105,6 +105,26 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				
+				
+				<configuration>
+                    <resourceEncoding>UTF-8</resourceEncoding>
+                    <nonFilteredFileExtensions>
+                        <nonFilteredFileExtension>eot</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>ttf</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>woff</nonFilteredFileExtension>
+						<nonFilteredFileExtension>svg</nonFilteredFileExtension>
+						<nonFilteredFileExtension>woff2</nonFilteredFileExtension>			
+						
+                    </nonFilteredFileExtensions>
+                    <webResources>
+                        <webResource>
+                            <directory>src/main/webapp/resources/css/bootstrap/fonts</directory>
+                            <filtering>true</filtering>
+                        </webResource>
+                    </webResources>
+                </configuration>
+				
 			</plugin>
 		</plugins>
 	</build>
