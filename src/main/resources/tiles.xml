@@ -9,13 +9,22 @@
 		<put-attribute name="pageTitle" value="" />
 		<put-attribute name="leftMenu" value=""/>
 		<put-attribute name="body" value="" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="footer" value="" />
+		<put-attribute name="topMenu" value="" />
+		
 		<put-list-attribute name="styles">
-			<add-attribute value="/resources/css/utility.css" />
-			<add-attribute value="/resources/css/style.css" />
+			<add-attribute value="/resources/css/main.css" />
+			<add-attribute value="/resources/css/bootstrap/bootstrap.min.css" />
+			<add-attribute value="/resources/css/bootstrap/bootstrap-theme.min.css" />
+			<add-attribute value="/resources/css/font-awesome-4.4.0/css/font-awesome.min.css" />
 			<add-attribute value="/resources/css/jquery-ui.css" />
 			<add-attribute value="/resources/css/jquery-ui.structure.css" />
 			<add-attribute value="/resources/css/jquery-ui.theme.css" />
+			
+					
 		</put-list-attribute>
+		
 		<put-list-attribute name="scripts">
 			<add-attribute value="/resources/js/lib/jquery/1.11.1/jquery.min.js" />
 			<add-attribute value="/resources/js/lib/bootstrap/3.2.0/bootstrap.min.js" />
@@ -32,6 +41,10 @@
 		<put-attribute name="pageTitle" value="IMS User" />
 		<put-attribute name="leftMenu" value="/WEB-INF/views/commons/left-menu.jsp"/>
 		<put-attribute name="body" value="/WEB-INF/views/ims-user/list.jsp" />
+		<put-attribute name="header" value="/WEB-INF/views/ims-user/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/ims-user/footer.jsp" />
+		<put-attribute name="topMenu" value="/WEB-INF/views/ims-user/topMenu.jsp" />
+		
 	</definition>
 </tiles-definitions>
 
