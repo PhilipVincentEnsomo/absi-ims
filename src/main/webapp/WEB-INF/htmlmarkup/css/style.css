@@ -1,82 +1,10 @@
-.loginheader{
-	margin: 11% auto 0 auto;
-	text-align: center;
-}
-
-.loginheader img{
-	width: 200px;
-}
-
-.loginheader ul{
-	padding: 0 0 0 30px;
-}
-
-.loginheader ul li{
-	list-style: none;
-	color: #FFFFFF;	
-	margin: 4px 0;
-	text-align: left;
-}
-
-.loginheader ul li label{
-	display: inline-block;
-	width: 70px;
-	font-weight: 600;
-	font-size: 12px;
-}
-
-.loginheader .field{
-  padding: 10px;
-  width: 74%;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border: none;
-  box-shadow: inset 0px 0px 3px 0px #000;
-  -moz-box-shadow: inset 0px 0px 3px 0px #000;
-  -webkit-box-shadow: inset 0px 0px 3px 0px #000;
-}
-
-.loginheader .btn{
-	border:none;
-	background: #FEB10B;
-	width: 78%;
-	font-weight: 600;
-	padding: 10px 5px;
-	margin: 5px 0 0 0;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	box-shadow: inset 0px 0px 3px 0px #000;
-	-moz-box-shadow: inset 0px 0px 3px 0px #000;
-	-webkit-box-shadow: inset 0px 0px 3px 0px #000;
-}
-
-.loginheader .btn:hover{
-	background: #EAA208;
-}
-
-.loginheader p{
-	margin: 0;
-	font-size: 11px;
-}
-
-.loginwrap{
-	background: #0A2871;
-	max-width: 500px;
-	padding: 10px 0 10px 0;
-	margin: 0 auto;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-}
-
-.loginwrap h2{
-	color: #FEB10B;
-	border-left: 10px solid #FEB10B;
-	padding: 0 0 0 20px;
-	text-align: left;
-}
+.panel-AddEmployees
+	{
+		border-color: #BFBF9E;
+		height: auto;
+		width: auto;	
+		
+	}
 
 .wrapper, .wrapper-admin{
 	width: 980px;
@@ -93,13 +21,13 @@
 }
 
 .teller-name{
-	color: #FFFFFF !important;
-	background: #193D93 !important;
+	color: #FFFFFF ;
+	background: #bf0e0e ;
 }
 
 .div-head a, .teller-name{
 	font-size: 13px;
-	font-weight: 500 !important;
+	font-weight: 500 ;
 	border-bottom-right-radius: 10px;
 	-moz-border-bottom-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
@@ -107,31 +35,59 @@
 	-moz-border-bottom-left-radius: 10px;
 	-webkit-border-bottom-left-radius: 10px;
 	color: #000000;
-	background: #FEB10B;
+	background: #b6acac;
 	padding: 5px 10px 10px 10px;
 }
 
 .div-head a:hover{
 	color: #FFFFFF;
-	background: #193D93;
+	background: #bf0e0e;
 }
 
 .header img{
 	width: 150px;
 	float: left;
-	margin: 30px 10px;
+	margin: -10px 10px;
 }
 
 .header h2{
 	float: right;
-	font-weight: 600;
-	background: #FEB10B;
-	color: #193D93;
+	font-weight: 300;
+	background: #bf0e0e;
+	color: #f2efef;
 	width: 750px;
-	padding: 20px;
-	border-top-left-radius: 20px;
+	padding: 10px;
+	border-top-left-radius: 80px;
 	border-bottom-left-radius: 20px;
 }
+
+.btnHeader{
+	float: right;
+	margin: 0 0 0 5px;
+	border: none;
+	border-radius: 5px;
+	width: 80px;
+	color: white;
+	background: #837d7d ;
+	font-weight: 500;
+}
+
+.search-btn{
+	border: none;
+  	border-radius: 5px;
+  	color: white;
+  	background: #837d7d;
+  	font-weight: 500;
+}
+
+.btn{
+	border: none ;
+  	border-radius: 5px;
+  	color: #bf0e0e;
+  	background: #b6acac;
+  	font-weight: 600;
+}
+
 
 .main-body{
 	clear: both;
@@ -139,7 +95,7 @@
 }
 
 .sidenav{
-	background: #193D93;
+	background: #bf0e0e;
 	border-radius: 20px;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -160,18 +116,18 @@
 	font-size: 13px;
 	padding: 10px;
 	border-top: 1px solid #000;
-	box-shadow: 0px 1px 0px #456AC3 inset;
-	-moz-box-shadow: 0px 1px 0px #456AC3 inset;
-	-webkit-box-shadow: 0px 1px 0px #456AC3 inset;
+	box-shadow: 0px 1px 0px #e13030 inset;
+	-moz-box-shadow: 0px 1px 0px #e13030 inset;
+	-webkit-box-shadow: 0px 1px 0px #e13030 inset;
 }
 
 .active{
-	background: #081F54;
+	background: #e38585;
 }
 
 .sidenav a{
-	color: #FEB10B;
-	font-weight: 600;
+	color: #fdfcfc;
+	font-weight: 500;
 }
 
 .main-body-2{
@@ -202,13 +158,13 @@
 
 .main-body-2 table .trhead{
 	color: #FFFFFF;
-	background: #FEB10B !important;
-	border-bottom: 2px solid #B2B2B2 !important;
+	background: #b6acac ;
+	border-bottom: 2px solid #B2B2B2 ;
 	font-weight: 600;
 }
 
 .main-body-2 table .trhead:hover{
-	cursor: default !important;
+	cursor: default ;
 }
 
 .main-body-2 table td{
@@ -224,25 +180,37 @@
 	border-bottom: 1px solid rgba(219, 219, 219, 0.46);
 }
 
-.form-biller ul li{
+.form-user ul li{
 	list-style: none;
 	margin: 7px 0;
 	font-size: 13px;
+	
 }
 
-.form-biller ul li label{
+.form-user ul li label{
 	display: inline-block;
-	width: 300px;
+	width: 250px;
 }
 
-.form-biller input{
+.form-user input{
 	margin: 0 0 0 10px;
 	border: 1px solid #BBBABA;
 	border-radius: 5px;
 	padding: 5px;
 }
 
-.form-biller input.inputfield{
+
+.form-user .checkbox-gender{
+	margin: -25px 0 0 265px;
+	border: 1px solid #BBBABA;
+	border-radius: 5px;
+	padding: 5px;
+	width: 180px;
+	
+}
+
+
+.form-user input.inputfield{
 	margin: 0 0 0 10px;
 	border: 1px solid #BBBABA;
 	border-radius: 5px;
@@ -250,29 +218,21 @@
 	width: 200px;
 }
 
-.form-biller select{
+.form-user textarea{
+	margin: -17px 0 0 260px;
+	border: 1px solid #BBBABA;
+	border-radius: 5px;
+	padding: 5px;
+	width: 300px;
+
+}
+.form-user select{
 	background: #FFFFFF;
 	margin: 0 0 0 10px;
 	border: 1px solid #BBBABA;
 	border-radius: 5px;
 	padding: 5px;
-	width: 210px;
-}
-
-.search-btn{
-	border: none;
-  	border-radius: 5px;
-  	color: #193D93;
-  	background: #FEB10B;
-  	font-weight: 600;
-}
-
-.btn{
-	border: none !important;
-  	border-radius: 5px;
-  	color: #193D93;
-  	background: #FEB10B;
-  	font-weight: 600;
+	width: 180px;
 }
 
 .view-biller ul li{

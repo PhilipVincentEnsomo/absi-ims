@@ -10,10 +10,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/main.css" />" />
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/bootstrap/bootstrap.min.css" />" />
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/bootstrap/bootstrap-theme.min.css" />" />
-	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/font-awesome-4.4.0/css/font-awesome.min.css" />" />
+	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/main.css" /> ">
+	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/bootstrap/bootstrap.min.css" /> ">
+	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/bootstrap/bootstrap-theme.min.css" /> ">
+	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/font-awesome-4.4.0/css/font-awesome.min.css" /> ">
 
 	
 </head>
@@ -32,7 +32,7 @@
 			</button>
 			
 			<div class="container-logo">
-				<a href="#"> <img class="img-rounded" src="<c:url value="/resources/images/LogiIcon.jpeg"/> "> </a>
+			
 					
 			</div>
 		</div>

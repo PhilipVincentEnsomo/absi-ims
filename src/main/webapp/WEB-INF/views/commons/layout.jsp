@@ -3,39 +3,43 @@
 <head>
 <title><tiles:insertAttribute name="title" ignore="false" /></title>
 </head>
-<body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
 
-<div class="wrapper">
-
-	<div id="header">			
-			<tiles:insertAttribute name="header" />
-	</div>			
+<div class="wrapper-admin">
+	
+	<!-- Top Header -->	
+	<div class="div-head">
 				
-	<div id="body">
-		
-		DITO ANG BODY
-		
-		<div id="topMenu" class="span-4">
-			<tiles:insertAttribute name="topMenu" />
-		</div>
-		
-		<div class="body-container clearfix">
+			<tiles:insertAttribute name="header" />
+	</div>	
+
+	<!-- Left Menu -->
+	<div id="leftMenu">
+		<tiles:insertAttribute name="leftMenu" />
+	</div>
+
+	
+	<!-- Body -->
+	
+		 <div class="main-body-2">	
+			<div class="main-body-3">
 			<tiles:insertAttribute name="body" />
+			</div>
 		</div>				
 	
-			<div class="clear push"></div>
+			
 			
 	
 		
 	
-	</div>
+	
 
 
 		
-	<div id="footer">
+	<!-- <div id="footer">
 		<tiles:insertAttribute name="footer" />
-	</div>
-			
+	</div> 
+	-->
+	
 </div>  
 
 

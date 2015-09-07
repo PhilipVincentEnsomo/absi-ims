@@ -27,6 +27,15 @@ public class IMSUserController {
 		return "imsUserList";
 	}
 
+	@RequestMapping(method =  RequestMethod.GET, value = "/new")
+	public String loadIMSUserForm(Model model) {
+		logger.info("Gregorio Magalpok");
+		IMSUser imsUser = new IMSUser();
+		model.addAttribute("imsUser", imsUser);
+		return "imsNewUserForm";
+	}	
+	
+	
 	@RequestMapping(method =  RequestMethod.GET, value = "/view/{id}")
 	public String loadIMSUserForm(Model model, Long id) {
 		IMSUser imsUser = imsUserService.getIMSUserById(id);
