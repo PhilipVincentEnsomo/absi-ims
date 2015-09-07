@@ -4,7 +4,7 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
        
 <tiles-definitions>
-	<definition name="base" template="/WEB-INF/views/commons/layout.jsp">
+	<definition name="base" template="/WEB-INF/views/commons/base-absi.jsp">
 		<put-attribute name="title" value="" />
 		<put-attribute name="pageTitle" value="" />
 		<put-attribute name="leftMenu" value=""/>
@@ -39,15 +39,14 @@
 	<definition name="404" template="/WEB-INF/views/404.jsp" />
 
 	<definition name="imsUserList" extends="base">
-		<put-attribute name="pageTitle" value="IMS User" />
-		<put-attribute name="header" value="/WEB-INF/views/commons/header-2.jsp" />
+		<put-attribute name="pageTitle" value="List of Users" />		
 		<put-attribute name="leftMenu" value="/WEB-INF/views/commons/left-menu-users.jsp" />
-		
+		<put-attribute name="body" value="/WEB-INF/views/ims-user/listUser.jsp" />
 	</definition>
 	
 	<definition name="imsNewUserForm" extends="base">
-		<put-attribute name="pageTitle" value="IMS User" />
-		<put-attribute name="header" value="/WEB-INF/views/commons/header-2.jsp" />
+		<put-attribute name="pageTitle" value="Create User" />
+		<put-attribute name="leftMenu" value="/WEB-INF/views/commons/left-menu-users.jsp" />
 		<put-attribute name="body" value="/WEB-INF/views/ims-user/createUser.jsp" />
 		
 	</definition>

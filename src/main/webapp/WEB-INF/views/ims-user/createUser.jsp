@@ -19,6 +19,12 @@
 
 <body>
 
+	<button class="btnHeader" type="button">Cancel</button>
+	<button class="btnHeader" type="button">Delete</button>
+	<button class="btnHeader" type="button">Edit</button>
+	<button class="btnHeader" type="button">Submit</button>
+
+
 <div class="main-body-2">
   <form class="form-user">
   <ul>
@@ -44,13 +50,13 @@
 	<li><label><strong> Last Name </strong></label>:<input type="text"/></li>	
 	
 	<li>
-		<label for ="Gender"> <strong> Gender </strong></label>:
-			<div class ="checkbox-gender">
-				<label class="checkbox-inline"><input type="checkbox" value="">Female</label><br>
-				<label class="checkbox-inline"><input type="checkbox" value="">Male</label>
-			</div>
-      </li>
-      
+		<label for ="Gender"><strong> Gender </strong></label>:<select>
+	                                <option>  </option>
+									<option> Female </option>
+	                                <option> Male </option>
+	                              </select>
+	</li>
+	   
 	<li><label><strong> Contact Number </strong></label>:<input type="text"/></li>
       <li><label><strong> E-mail Address </strong></label>:<input type="text"/></li>					
 	<li><label><strong> Address </strong></label>:<input type="text"/></li>
