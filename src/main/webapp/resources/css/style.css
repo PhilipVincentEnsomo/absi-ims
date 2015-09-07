@@ -40,23 +40,29 @@
 .header img{
 	width: 150px;
 	float: left;
-	margin: -10px 10px;
+	margin: -10px 20px;
 }
 
 .header h2{
-	float: right;
+	float: left;
 	font-weight: 300;
 	background: #bf0e0e;
 	color: #f2efef;
-	width: 750px;
+	width: 789px;
 	padding: 10px;
 	border-top-left-radius: 80px;
 	border-bottom-left-radius: 20px;
 }
 
+.buttonHeader{
+	float: right;
+	padding: -1580px 0 0 0;
+	
+}
+
 .btnHeader{
 	float: right;
-	margin: 0 0 0 5px;
+	margin: -20px 0 0 5px;
 	border: none;
 	border-radius: 5px;
 	width: 80px;
@@ -127,6 +133,7 @@
 	position: absolute;
 	width: 780px;
 	right: 0;
+	
 }
 
 .search-options{
