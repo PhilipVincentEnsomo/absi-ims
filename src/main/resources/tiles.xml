@@ -14,7 +14,8 @@
 		<put-attribute name="topMenu" value="" />
 		
 		<put-list-attribute name="styles">
-			<add-attribute value="/resources/css/main.css" />
+			<add-attribute value="/resources/css/style.css" />
+			<add-attribute value="/resources/css/utility.css" />
 			<add-attribute value="/resources/css/bootstrap/bootstrap.min.css" />
 			<add-attribute value="/resources/css/bootstrap/bootstrap-theme.min.css" />
 			<add-attribute value="/resources/css/font-awesome-4.4.0/css/font-awesome.min.css" />
@@ -39,12 +40,17 @@
 
 	<definition name="imsUserList" extends="base">
 		<put-attribute name="pageTitle" value="IMS User" />
-		<put-attribute name="leftMenu" value="/WEB-INF/views/commons/left-menu.jsp"/>
-		<put-attribute name="body" value="/WEB-INF/views/ims-user/list.jsp" />
-		<put-attribute name="header" value="/WEB-INF/views/ims-user/header.jsp" />
-		<put-attribute name="footer" value="/WEB-INF/views/ims-user/footer.jsp" />
-		<put-attribute name="topMenu" value="/WEB-INF/views/ims-user/topMenu.jsp" />
+		<put-attribute name="header" value="/WEB-INF/views/commons/header-2.jsp" />
+		<put-attribute name="leftMenu" value="/WEB-INF/views/commons/left-menu-users.jsp" />
 		
 	</definition>
+	
+	<definition name="imsNewUserForm" extends="base">
+		<put-attribute name="pageTitle" value="IMS User" />
+		<put-attribute name="header" value="/WEB-INF/views/commons/header-2.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-user/createUser.jsp" />
+		
+	</definition>
+	
 </tiles-definitions>
 
