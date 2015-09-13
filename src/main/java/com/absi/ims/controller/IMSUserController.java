@@ -27,9 +27,9 @@ public class IMSUserController {
 		return "imsUserList";
 	}
 
-	@RequestMapping(method =  RequestMethod.GET, value = "/new")
+	@RequestMapping(value = "/new", method = RequestMethod.GET)
 	public String loadIMSUserForm(Model model) {
-		logger.info("Gregorio Magalpok");
+		logger.info("Creating new IMS User");
 		IMSUser imsUser = new IMSUser();
 		model.addAttribute("imsUser", imsUser);
 		return "imsNewUserForm";
