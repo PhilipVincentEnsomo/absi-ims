@@ -56,18 +56,18 @@ public class IMSUserControllerTest {
 		assertEquals("imsUserForm", page);
 	}
 
-	@Test
-	public void shouldSaveIMSUser() {
-		// given
-		IMSUser imsUser = IMSUserMock.generateIMSUser();
-
-		// when
-		String page = imsUserController.saveIMSUser(imsUser);
-
-		// then
-		verify(imsUserService).addIMSUser(imsUser);
-		assertEquals("redirect:/ims-user", page);
-	}
+//	@Test
+//	public void shouldSaveIMSUser() {
+//		// given
+//		IMSUser imsUser = IMSUserMock.generateIMSUser();
+//
+//		// when
+//		String page = imsUserController.saveIMSUser(imsUser);
+//
+//		// then
+//		verify(imsUserService).addIMSUser(imsUser);
+//		assertEquals("redirect:/ims-user", page);
+//	}
 	
 	@Test
 	public void shouldDeleteIMSUser() {

@@ -27,6 +27,14 @@ public class IMSUser extends Auditable implements Serializable {
 	private Long id;
 
 	@Size(min=1, max=35)
+	@Column(name = "username")
+	private String username;
+	
+	@Size(min=1, max=35)
+	@Column(name = "password")
+	private String password;
+	
+	@Size(min=1, max=35)
 	@Column(name = "first_name")
 	private String firstname;
 
@@ -41,6 +49,26 @@ public class IMSUser extends Auditable implements Serializable {
 	@Enumerated(EnumType.STRING)
 	@Column(name = "gender")
 	private Gender gender;
+	
+	@Size(min=1, max=35)
+	@Column(name = "contact_number")
+	private String contactNumber;
+	
+	@Size(min=1, max=35)
+	@Column(name = "email_address")
+	private String emailAddress;
+	
+	@Size(min=1, max=35)
+	@Column(name = "address")
+	private String address;
+	
+	@Size(min=1, max=35)
+	@Column(name = "city")
+	private String city;
+	
+	@Size(min=1, max=35)
+	@Column(name = "postal_code")
+	private String postalCode;
 	
 	@Version
 	private Long version;
@@ -59,6 +87,22 @@ public class IMSUser extends Auditable implements Serializable {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getFirstname() {
@@ -92,5 +136,47 @@ public class IMSUser extends Auditable implements Serializable {
 	public void setGender(Gender gender) {
 		this.gender = gender;
 	}
+
+	public String getContactNumber() {
+		return contactNumber;
+	}
+
+	public void setContactNumber(String contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getPostalCode() {
+		return postalCode;
+	}
+
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
+	}
+	
+	
 
 }
