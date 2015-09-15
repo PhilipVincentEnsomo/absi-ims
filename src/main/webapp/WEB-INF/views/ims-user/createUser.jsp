@@ -58,7 +58,7 @@
 	</li>
 	   
 	<li><label><strong> Contact Number </strong></label>:<input type="text"/></li>
-      <li><label><strong> E-mail Address </strong></label>:<input type="text"/></li>					
+    <li><label><strong> E-mail Address </strong></label>:<input type="text"/></li>					
 	<li><label><strong> Address </strong></label>:<input type="text"/></li>
 	<li><label><strong> City </strong></label>:<input type="text"/></li>
 	<li><label><strong> Postal Code </strong></label>:<input type="text"/></li>

@@ -39,7 +39,7 @@ public class IMSUserController {
 	public String loadIMSUserForm(Model model, Long id) {
 		IMSUser imsUser = imsUserService.getIMSUserById(id);
 		model.addAttribute("imsUser", imsUser);
-		return "imsUserForm";
+		return "imsViewUserForm";
 	}
 
 	@RequestMapping(method = RequestMethod.POST, value = "/save")
