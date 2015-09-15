@@ -31,14 +31,14 @@
 	    <td> Password </td>
 	    
 	  </tr>
-	  <tr onclick="location.href='view-users.html'">
+	  <tr onclick="location.href='view-user.jsp'">
 	    <td>Employee</td>
 	    <td>Dominique Frances Del Rosario</td>
 	    <td>delrosariod</td>
 	    <td>Machiatto!@3</td>
 	    
 	  </tr>
-	  <tr onclick="location.href='view-users.html'">
+	  <tr onclick="location.href='view-user.jsp'">
 	    <td>Client</td>
 	    <td>Splash Corporations</td>
 	    <td>splashcorporations</td>
@@ -46,7 +46,7 @@
 	    
 	  </tr>                            
 	  
-	  <tr onclick="location.href='view-users.html'">
+	  <tr onclick="location.href='view-user.jsp'">
 	    <td>Encoder</td>
 	    <td>Gregoria T. Manoloto</td>
 	    <td>gManoloto</td>

@@ -51,5 +51,13 @@
 		
 	</definition>
 	
+	<definition name="imsViewUserForm" extends="base">
+		<put-attribute name="pageTitle" value="View Users" />
+		<put-attribute name="leftMenu" value="/WEB-INF/views/commons/left-menu-users.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-user/view-user.jsp" />
+		
+	</definition>
+	
+	
 </tiles-definitions>
 
