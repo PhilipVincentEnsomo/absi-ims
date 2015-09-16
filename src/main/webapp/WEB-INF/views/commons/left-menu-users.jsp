@@ -19,14 +19,25 @@
 <body>
 
 	<div class="main-body">
-      <div class="sidenav">
-        <label>Admin</label>
-        <ul>
-          <li><a href="${pageContext.request.contextPath}/ims-user">List of Users</a></li>
-          <li><a href="${pageContext.request.contextPath}/ims-user/new">Create New User</a></li>
-          
-        </ul>
-      </div>
+		<div class="sidenav">
+			<label>Admin</label>
+				<ul>
+					<!--
+					<li><a href="${pageContext.request.contextPath}/ims-user">List of Users</a></li>
+					<li><a href="${pageContext.request.contextPath}/ims-user/new">Create New User</a></li>
+					-->
+					
+					<li class="active"><a href="${pageContext.request.contextPath}/ims-user">Users</a></li>
+					<li><a href="list-products.html">Product</a></li>
+					<li><a href="list-outlets.html">Outlet</a></li>
+					<li><a href="">Inventory</a></li>
+					<li><a href="">Reports</a></li>
+					
+					
+					
+					
+				</ul>
+		</div>
 
 
 </body>

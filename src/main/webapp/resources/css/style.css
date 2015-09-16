@@ -40,35 +40,61 @@
 .header img{
 	width: 150px;
 	float: left;
-	margin: -10px 20px;
+	margin: -10px 10px;
 }
 
 .header h2{
-	float: left;
+	float: right;
 	font-weight: 300;
 	background: #bf0e0e;
 	color: #f2efef;
-	width: 789px;
-	padding: 10px;
+	width: 790px;
+	padding: 25px;
 	border-top-left-radius: 80px;
 	border-bottom-left-radius: 20px;
-}
-
-.buttonHeader{
-	float: right;
-	padding: -1580px 0 0 0;
+	display:inline-block;
+	position:relative;
 	
 }
 
-.btnHeader{
+.header strong {
+    float: right;
+    font-weight: 300;
+    background: #bf0e0e;
+    color: #f2efef;
+    width: 790px;
+    padding: 15px;
+    margin-top: 30px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.btnHeader {
 	float: right;
-	margin: -20px 0 0 5px;
+	margin: 10px 0 0 5px;
 	border: none;
 	border-radius: 5px;
 	width: 80px;
 	color: white;
 	background: #837d7d ;
 	font-weight: 500;
+}
+
+.search-options .btnAdd{
+	border: none;
+  	border-radius: 5px;
+  	color: white;
+  	background: #837d7d;
+  	font-weight: 500;
+}
+
+.btnAdd:hover {
+	background-color: #e18989;
+}
+
+.btnHeader:hover {
+	background-color: #e18989;
 }
 
 .search-btn{
@@ -105,20 +131,28 @@
 
 .sidenav label{
 	color: #FFFFFF;
-	margin: 0 0 0 10px;
+	margin: 0 0 0 50px;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 20px;
+	
 }
 
 .sidenav ul li{
 	list-style: none;
-	font-size: 13px;
+	font-size: 15px;
 	padding: 10px;
 	border-top: 1px solid #000;
 	box-shadow: 0px 1px 0px #e13030 inset;
 	-moz-box-shadow: 0px 1px 0px #e13030 inset;
 	-webkit-box-shadow: 0px 1px 0px #e13030 inset;
 }
+
+
+.sidenav ul li:hover{
+	background: #e38585;
+}
+
+
 
 .active{
 	background: #e38585;
@@ -127,14 +161,23 @@
 .sidenav a{
 	color: #fdfcfc;
 	font-weight: 500;
+	margin: 0 0 0 10px;
 }
 
 .main-body-2{
 	position: absolute;
 	width: 780px;
-	right: 0;
 	
+	right: 0;
 }
+
+
+.main-body-3{
+	position: absolute;
+	width: 780px;	
+	margin: 50px 0 0 180px;
+}
+
 
 .search-options{
 	margin: 30px 0 0 0;

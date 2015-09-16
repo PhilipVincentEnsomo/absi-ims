@@ -24,9 +24,7 @@
 
 <body>
 
-	<button class="btnHeader" type="button">Cancel</button>
-	<button class="btnHeader" type="button">Delete</button>
-	<button class="btnHeader" type="button">Edit</button>
+	<input type="button" value="Cancel" class="btnHeader button" onclick="location.href='${pageContext.request.contextPath}/ims-user'">
 	<button class="btnHeader" type="button">Submit</button>
 
 	<li><label><strong> User Type </strong></label>:<select>
@@ -35,39 +33,42 @@
 			<option>Encoder</option>
 			<option>Client</option>
 	</select></li>
-	<form:form id="imsUser" modelAttribute="imsUser"
+	
+	<form:form id="imsUser" modelAttribute="imsUser" 
 		action="${pageContext.servletContext.contextPath}/save" method="POST"
-		cssClass="form-horizontal">
-
-		<li><label><strong> Username </strong></label>:<form:input
-				type="text" path="username" /></li>
-		<li><label><strong> Password </strong></label>:<form:input
-				type="text" path="password" /></li>
-		<li><label><strong> First Name </strong></label>:<form:input
-				type="text" path="firstname" /></li>
-		<li><label><strong> Middle Name </strong></label>:<form:input
-				type="text" path="middlename" /></li>
-		<li><label><strong> Last Name </strong></label>:<form:input
-				type="text" path="lastname" /></li>
-		<li><label><strong> Contact Number </strong></label>:<input
-			type="text" /></li>
-		<li><label><strong> E-mail Address </strong></label>:<form:input
-				type="text" path="emailAddress" /></li>
-		<li><label><strong> Address </strong></label>:<form:input
-				type="text" path="address" /></li>
-		<li><label><strong> City </strong></label>:<form:input
-				type="text" path="city" /></li>
-		<li><label><strong> Postal Code </strong></label>:<form:input
-				type="text" path="postalCode" /></li>
+		cssClass="form-user">
+		
+		<ul>
+			<li><label><strong> Username </strong></label>:<form:input
+					type="text" path="username" /></li>
+			<li><label><strong> Password </strong></label>:<form:input
+					type="text" path="password" /></li>
+			<li><label><strong> First Name </strong></label>:<form:input
+					type="text" path="firstname" /></li>
+			<li><label><strong> Middle Name </strong></label>:<form:input
+					type="text" path="middlename" /></li>
+			<li><label><strong> Last Name </strong></label>:<form:input
+					type="text" path="lastname" /></li>
+			<li><label><strong> Contact Number </strong></label>:<input
+				type="text" /></li>
+			<li><label><strong> E-mail Address </strong></label>:<form:input
+					type="text" path="emailAddress" /></li>
+			<li><label><strong> Address </strong></label>:<form:input
+					type="text" path="address" /></li>
+			<li><label><strong> City </strong></label>:<form:input
+					type="text" path="city" /></li>
+			<li><label><strong> Postal Code </strong></label>:<form:input
+					type="text" path="postalCode" /></li>
+		</ul>
 	</form:form>
-	<!-- 			<li><label for="Gender"><strong> Gender </strong></label>:<select> -->
-	<!-- 					<option></option> -->
-	<!-- 					<option>Female</option> -->
-	<!-- 					<option>Male</option> -->
-	<!-- 			</select></li> -->
-
-	</ul>
-	</div>
+	
+	
 
 </body>
 </html>
+
+<!-- 			<li><label for="Gender"><strong> Gender </strong></label>:<select> -->
+<!-- 					<option></option> -->
+<!-- 					<option>Female</option> -->
+<!-- 					<option>Male</option> -->
+<!-- 			</select></li> -->

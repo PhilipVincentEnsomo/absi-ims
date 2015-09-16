@@ -18,9 +18,9 @@
 	<!-- Header -->
 	<div class="header">
 		<img src="${pageContext.request.contextPath}/resources/images/LogiIcon.jpeg" />
-		<h2>
+		<strong>
 			<tiles:insertAttribute name="pageTitle" />
-		</h2>
+		</strong>
 	</div>
 	
 	<div class="main-body">

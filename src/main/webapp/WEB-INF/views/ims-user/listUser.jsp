@@ -19,8 +19,9 @@
 
 
     <div class="search-options">
-	  <input type="text" class="field">
-	  <input type="button" value="Search" class="search-btn button">
+		<input type="text" class="field">
+		<input type="button" value="Search" class="search-btn button">
+		<input type="button" value="Add" class="btnAdd button" onclick="location.href='${pageContext.request.contextPath}/ims-user/new'">
 	</div>
 	
 	<table>

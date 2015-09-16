@@ -19,42 +19,28 @@
       <div class="wrapper-admin"> 
         <!-- Top Header -->
         <div class="div-head">
-            <label class="teller-name">Nikki Del Rosario</label>
+            <label class="user-name">Nikki Del Rosario</label>
             <a href="#">Logout</a>
         </div>
         <!-- Header -->
         <div class="header">
             <img src="../icons/LogiIcon.jpeg">
-            <h2>User Details</h2>			
+            <strong>&nbsp  User Details</strong>			
         </div>
 		
-		<div class="buttonHeader">
-			<button class="btnHeader" type="button">Cancel</button>
-			<button class="btnHeader" type="button">Delete</button>
-			<button class="btnHeader" type="button">Edit</button>
-			<button class="btnHeader" type="button">Submit</button>
-		</div>
 		
+			<button class="btnHeader" type="button" id="btnCancel" onclick="location.href='main-page.html'">Cancel</button>
+			<button class="btnHeader" type="button" id="btnDelete">Delete</button>
+			<button class="btnHeader" type="button" id="btnEdit">Edit</button>
+					
 		
         <!-- Main Body -->
         <div class="main-body">
-          <div class="sidenav">
-            <label>Admin</label>
-            <ul>
-              <li><a href="list-users.html">List of Users</a></li>
-              <li><a href="create-user.html">Create New User</a></li>
-              
-            </ul>
-          </div>
           <div class="main-body-2">
-            <form class="form-user">
+            <form class="form-user view-user">
             <ul>
-				<!--
-				<li>
-					<button id="btnAdd" type="button" class="btn btn-default">Add</button>	
-				</li>
-				-->
 				
+
 				<li><label><strong> User Type </strong></label>:<input type="text" disabled="disabled" placeholder=" Employee "/></li>
 				
 				<li><label><strong> Username </strong></label>:<input type="text" disabled="disabled" placeholder=" delrosariod "/></li>

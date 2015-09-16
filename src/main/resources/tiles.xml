@@ -46,7 +46,6 @@
 	
 	<definition name="imsNewUserForm" extends="base">
 		<put-attribute name="pageTitle" value="Create User" />
-		<put-attribute name="leftMenu" value="/WEB-INF/views/commons/left-menu-users.jsp" />
 		<put-attribute name="body" value="/WEB-INF/views/ims-user/createUser.jsp" />
 		
 	</definition>

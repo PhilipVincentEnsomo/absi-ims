@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
   <head>
     <title></title>
@@ -25,32 +25,25 @@
         <!-- Header -->
         <div class="header">
             <img src="../icons/LogiIcon.jpeg">
-            <h2>&nbsp  Add Product</h2>			
+            <strong>&nbsp  Add Product</strong>			
         </div>
 		
-		<br>
-		
-		<div class="buttonHeader">
-			<button class="btnHeader" type="button">Cancel</button>
-			<button class="btnHeader" type="button">Delete</button>
-			<button class="btnHeader" type="button">Edit</button>
-			<button class="btnHeader" type="button">Submit</button>
-		</div>
-		
+		<button class="btnHeader" type="button" id="btnCancel" onclick="location.href='main-page.html'">Cancel</button>
+		<button class="btnHeader" type="button" id="btnSubmit">Submit</button>
 		
         <!-- Main Body -->
         <div class="main-body">
-          <div class="sidenav">
-            <label>Product</label>
-            <ul>
-              <li><a href="list-products.html">List of Products</a></li>
-              <li class="active"><a href="add-product.html">Add Product</a></li>
-              
-            </ul>
-          </div>
+
           <div class="main-body-2">
             <form class="form-user add-product">
             <ul>
+				
+				<li><label><strong> Outlet Store </strong></label>:<select>
+				                                <option>  </option>
+												<option> SM Hypermarket </option>
+				                                <option> Makati Supermarket </option>
+				                              </select>
+				</li>
 				
 				<li><label><strong> Supplier </strong></label>:<select>
 				                                <option>  </option>
@@ -58,6 +51,7 @@
 				                                <option> Biolinks </option>
 				                              </select>
 				</li>
+				
 				
 				<li><label><strong> Product Categroy </strong></label>:<select>
 				                                <option>  </option>
