@@ -32,7 +32,7 @@
 	    <td> Password </td>
 	    
 	  </tr>
-	  <tr onclick="location.href='view-user.jsp'">
+	  <tr onclick="location.href='${pageContext.request.contextPath}/ims-user/view-user.jsp'">
 	    <td>Employee</td>
 	    <td>Dominique Frances Del Rosario</td>
 	    <td>delrosariod</td>

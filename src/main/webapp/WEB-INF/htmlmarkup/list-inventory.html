@@ -10,12 +10,14 @@
     <link href="css/utility.css" rel="stylesheet">  
     <link href="css/style.css" rel="stylesheet">  
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/datepicker.css" rel="stylesheet">
 	
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
     <!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>  
+	<script src="scripts/bootstrap-datepicker.js"></script>  
     
   </head>
   <body>   
@@ -28,7 +30,7 @@
         <!-- Header -->
         <div class="header">
             <img src="images/LogiIcon.jpeg">
-            <strong> List of Users </strong>
+            <strong> Inventory </strong>
 			
         </div>
 		
@@ -38,10 +40,10 @@
 			<div class="sidenav">
 				<label> Admin </label>
 					<ul>
-					<li class="active"><a href="main-page.html">Users</a></li>
+					<li><a href="main-page.html">Users</a></li>
 					<li><a href="list-products.html">Product</a></li>
 					<li><a href="list-outlets.html">Outlet</a></li>
-					<li><a href="list-inventory.html">Inventory</a></li>
+					<li class="active"><a href="#">Inventory</a></li>
 					<li><a href="">Reports</a></li>
 					
 					</ul>
@@ -50,45 +52,68 @@
 			</div>
 
         <div class="main-body-2">
-            <div class="search-options">
-			  <input type="text" class="field">
-			  <input type="button" value="Search" class="search-btn button">
-			  <input type="button" value="Add" class="btnAdd button" onclick="location.href='create-user.html'">
+			<div class="body-inventory">
+				<ul>
+					<li>
+						<label> Date From </label>:<input type="text" id="startDate-dp" />
+						<label> Date To </label>:<input type="text" id="endDate-dp" />
+					</li>
+					
+					
+					<script type="text/javascript">
+						$(function()
+						{
+						
+							var startDate = new Date ();
+							var endDate = new Date ();
+							
+							$('#startDate-dp').datepicker()
+									.on('changeDate', function(ev)
+									{
+										$('#startDate-dp').datepicker('hide');
+									});
+									
+							$('#endDate-dp').datepicker()
+									.on('changeDate', function(ev)
+									{
+										
+										$('#endDate-dp').datepicker('hide');
+									});		
+							
+							
+						});
+								
+								
+								
+								
+						
+					</script>
+					
+					<li>
+						<label> Outlet </label>:<select>
+										<option> </option>
+										<option> Citimart - Baystar </option>
+										<option> Carlos Superdrug </option>
+										<option> Shopwise - Alabang </option>
+										<option> Shopwise - Eastwood </option>
+				
+					</li>
+				</ul>
+			 
+			 
 			</div>
 			
-			<table>
-			  <tr class="trhead">
-			    <td>User Type</td>
-			    <td> Name </td>
-			    <td> Username </td>
-			    <td> Password </td>
-			    
-			  </tr>
-			  <tr onclick="location.href='view-users.html'">
-			    <td>Employee</td>
-			    <td>Dominique Frances Del Rosario</td>
-			    <td>delrosariod</td>
-			    <td>Machiatto!@3</td>
-			    
-			  </tr>
-			  <tr onclick="location.href='view-users.html'">
-			    <td>Client</td>
-			    <td>Splash Corporations</td>
-			    <td>splashcorporations</td>
-			    <td>splashGregorio</td>
-			    
-			  </tr>                            
-			  
-			  <tr onclick="location.href='view-users.html'">
-			    <td>Encoder</td>
-			    <td>Gregoria T. Manoloto</td>
-			    <td>gManoloto</td>
-			    <td>pashWord!@#4</td>
-			    
-			  </tr>                            
-			</table>
-			
-        </div>
+			<div class="inventory-body">
+				<ul>
+					
+					
+					
+					
+					
+					
+					
+				</ul>
+			</div>
         </div>
       </div>
 

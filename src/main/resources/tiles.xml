@@ -22,6 +22,7 @@
 			<add-attribute value="/resources/css/jquery-ui.css" />
 			<add-attribute value="/resources/css/jquery-ui.structure.css" />
 			<add-attribute value="/resources/css/jquery-ui.theme.css" />
+			<add-attribute value="/resources/css/datepicker.css" />
 			
 					
 		</put-list-attribute>
@@ -31,6 +32,7 @@
 			<add-attribute value="/resources/js/lib/bootstrap/3.2.0/bootstrap.min.js" />
 			<add-attribute value="/resources/css/jquery-ui/1.11.4/jquery-ui.min.js" />
 			<add-attribute value="/resources/js/lib/underscore/1.8.3/underscore-min.js" />
+			<add-attribute value="/resources/scripts/bootstrap-datepicker.js" />
 		</put-list-attribute>
 	</definition>
 
