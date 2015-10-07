@@ -22,11 +22,13 @@
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/datepicker.css" /> ">
 
+<!--
 <script src="<c:url value="/resources/js/lib/jquery/1.11.1/jquery.min.js" /> "> </script>
 <script src="<c:url value="/resources/scripts/bootstrap-datepicker.js" /> "> </script>
+-->
 
-
-
+<script src="${pageContext.request.contextPath}/resources/js/lib/jquery/1.11.1/jquery.min.js" />  </script>
+<script src="${pageContext.request.contextPath}/resources/scripts/bootstrap-datepicker.js" />  </script>
 
 
 </head>
@@ -34,7 +36,7 @@
 <body>
 
 	<input type="button" value="Cancel" class="btnHeader button" onclick="location.href='${pageContext.request.contextPath}/ims-user'">
-	<button class="btnHeader" type="button">Submit</button>
+	<input type="button" value="Submit" class="btnHeader button" onclick="saveNewUser()">
 
 	<li><label><strong> User Type </strong></label>:<select>
 			<option></option>
@@ -44,7 +46,7 @@
 	</select></li>
 	
 	<form:form id="imsUser" modelAttribute="imsUser" 
-		action="${pageContext.servletContext.contextPath}/save" method="POST"
+		action="${pageContext.servletContext.contextPath}/ims-user/save" method="POST"
 		cssClass="form-user">
 		
 		<ul>
@@ -58,8 +60,8 @@
 					type="text" path="middlename" /></li>
 			<li><label><strong> Last Name </strong></label>:<form:input
 					type="text" path="lastname" /></li>
-			<li><label><strong> Contact Number </strong></label>:<input
-				type="text" /></li>
+			<li><label><strong> Contact Number </strong></label>:<form:input
+				type="text" path="contactNumber"/></li>
 			
 			<li><label><strong> Birthday </strong></label>:<input
 				type="text" id="birthDate-dp"/></li>	
@@ -82,6 +84,11 @@
 </html>
 
 <script type="text/javascript">
+
+function saveNewUser()
+{
+	document.getElementById("imsUser").submit();
+}
 
 var $j = jQuery.noConflict();
 
