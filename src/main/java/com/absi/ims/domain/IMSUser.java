@@ -54,11 +54,11 @@ public class IMSUser extends Auditable implements Serializable {
 	@Column(name = "contact_number")
 	private String contactNumber;
 	
-	@Size(min=1, max=35)
+	@Size(min=1, max=200)
 	@Column(name = "email_address")
 	private String emailAddress;
 	
-	@Size(min=1, max=35)
+	@Size(min=1, max=1000)
 	@Column(name = "address")
 	private String address;
 	

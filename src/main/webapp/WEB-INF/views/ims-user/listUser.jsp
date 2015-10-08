@@ -24,36 +24,31 @@
 		<input type="button" value="Add" class="btnAdd button" onclick="location.href='${pageContext.request.contextPath}/ims-user/new'">
 	</div>
 	
-	<table>
+	<table class="user-list">
 	  <tr class="trhead">
-	    <td>User Type</td>
+	    <td> User Type </td>
 	    <td> Name </td>
-	    <td> Username </td>
-	    <td> Password </td>
+	    <td> Username  </td>
+	    <td> Password  </td>
+	    <td> Contact Number </td>
 	    
 	  </tr>
-	  <tr onclick="location.href='${pageContext.request.contextPath}/ims-user/view-user.jsp'">
-	    <td>Employee</td>
-	    <td>Dominique Frances Del Rosario</td>
-	    <td>delrosariod</td>
-	    <td>Machiatto!@3</td>
-	    
-	  </tr>
-	  <tr onclick="location.href='view-user.jsp'">
-	    <td>Client</td>
-	    <td>Splash Corporations</td>
-	    <td>splashcorporations</td>
-	    <td>splashGregorio</td>
-	    
-	  </tr>                            
 	  
-	  <tr onclick="location.href='view-user.jsp'">
-	    <td>Encoder</td>
-	    <td>Gregoria T. Manoloto</td>
-	    <td>gManoloto</td>
-	    <td>pashWord!@#4</td>
-	    
-	  </tr>                            
+		<c:forEach var="user" items="${imsUserList}">
+			
+			
+			<tr onclick="location.href='${pageContext.request.contextPath}/ims-user/view-user.jsp'">
+						
+				<td>Employee</td>
+				<td>	<c:out value="${user.lastname} , ${user.firstname} ${user.middlename}" />	</td>
+				<td>	<c:out value="${user.username}"	    />	</td>
+				<td>	<c:out value="${user.password}"		/>	</td>
+				<td>	<c:out value="${user.contactNumber}"		/>	</td>
+				
+			</tr>
+			
+		</c:forEach>
+	  
 	</table>
 
 

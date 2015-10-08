@@ -88,6 +88,7 @@
 function saveNewUser()
 {
 	document.getElementById("imsUser").submit();
+	alert ("New User has been saved!");
 }
 
 var $j = jQuery.noConflict();
