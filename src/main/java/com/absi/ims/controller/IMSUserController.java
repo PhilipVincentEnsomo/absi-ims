@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -40,7 +41,7 @@ public class IMSUserController {
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/view/{id}")
-	public String loadIMSUserForm(Model model, Long id) {
+	public String loadIMSUserForm(Model model, @PathVariable Long id) {
 		IMSUser imsUser = imsUserService.getIMSUserById(id);
 		model.addAttribute("imsUser", imsUser);
 		return "imsViewUserForm";
@@ -54,7 +55,7 @@ public class IMSUserController {
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/delete")
-	public String deleteIMSUser(Long id) {
+	public String deleteIMSUser(@PathVariable Long id) {
 		IMSUser imsUser = imsUserService.getIMSUserById(id);
 		imsUserService.deleteIMSUser(imsUser);
 		return "redirect:/ims-user";
