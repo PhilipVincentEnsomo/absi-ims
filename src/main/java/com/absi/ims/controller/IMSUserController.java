@@ -41,6 +41,7 @@ public class IMSUserController {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/view/{id}")
 	public String loadIMSUserForm(Model model, Long id) {
+		logger.info("Displaying user" + id);
 		IMSUser imsUser = imsUserService.getIMSUserById(id);
 		model.addAttribute("imsUser", imsUser);
 		return "imsViewUserForm";

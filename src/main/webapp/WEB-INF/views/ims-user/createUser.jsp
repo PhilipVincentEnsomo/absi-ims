@@ -27,8 +27,7 @@
 <script src="<c:url value="/resources/scripts/bootstrap-datepicker.js" /> "> </script>
 -->
 
-<script src="${pageContext.request.contextPath}/resources/js/lib/jquery/1.11.1/jquery.min.js" />  </script>
-<script src="${pageContext.request.contextPath}/resources/scripts/bootstrap-datepicker.js" />  </script>
+
 
 
 </head>

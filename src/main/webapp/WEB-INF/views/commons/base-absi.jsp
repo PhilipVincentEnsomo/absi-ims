@@ -3,7 +3,12 @@
 		
 <html>
 <head>
-<title><tiles:insertAttribute name="title" ignore="false" /></title>
+	<title><tiles:insertAttribute name="title" ignore="false" /></title>
+
+	<script src="${pageContext.request.contextPath}/resources/js/lib/jquery/1.11.1/jquery.min.js" />  </script>
+	<script src="${pageContext.request.contextPath}/resources/scripts/bootstrap-datepicker.js" />  </script>
+	
+
 </head>
 
 

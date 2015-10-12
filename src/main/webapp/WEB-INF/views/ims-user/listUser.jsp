@@ -26,7 +26,7 @@
 	
 	<table class="user-list">
 	  <tr class="trhead">
-	    <td> User Type </td>
+		<td> User Type </td>
 	    <td> Name </td>
 	    <td> Username  </td>
 	    <td> Password  </td>
@@ -36,14 +36,29 @@
 	  
 		<c:forEach var="user" items="${imsUserList}">
 			
-			
-			<tr onclick="location.href='${pageContext.request.contextPath}/ims-user/view-user.jsp'">
-						
+			<tr class="link"> 			
 				<td>Employee</td>
-				<td>	<c:out value="${user.lastname} , ${user.firstname} ${user.middlename}" />	</td>
-				<td>	<c:out value="${user.username}"	    />	</td>
-				<td>	<c:out value="${user.password}"		/>	</td>
-				<td>	<c:out value="${user.contactNumber}"		/>	</td>
+				
+				<td>	
+					<c:out value="${user.lastname} , ${user.firstname} , ${user.middlename}" />	
+					
+					<div class="hidden view-url">
+						<c:url value="/ims-user/view/${user.id}" />
+					
+					</div>
+				</td>
+				
+				<td>	
+					<c:out value="${user.username}" />	
+				</td>
+				
+				<td>	
+					<c:out value="${user.password}"		/>	
+				</td>
+				
+				<td>	
+					<c:out value="${user.contactNumber}" />	
+				</td>
 				
 			</tr>
 			
@@ -51,6 +66,15 @@
 	  
 	</table>
 
+<script type="text/javascript">
+	$(function() {
+		$(".link").click(function() {
+			var url = $(this).find(".view-url").html();
+			validNavigation = true;
+						window.location = $.trim(url);
+		});
+	});
+</script>
 
 
 </body>
