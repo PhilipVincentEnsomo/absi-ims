@@ -21,6 +21,8 @@ import com.absi.ims.service.IMSUserService;
 public class IMSUserController {
 
 	private static final Logger logger = LoggerFactory.getLogger(IMSUserController.class);
+	private static final String SAVE_ACTION = "/ims-user/save";
+	private static final String UPDATE_ACTION = "/ims-user/update";
 
 	@Autowired
 	private IMSUserService imsUserService;
@@ -37,6 +39,8 @@ public class IMSUserController {
 		logger.info("Creating new IMS User");
 		IMSUser imsUser = new IMSUser();
 		model.addAttribute("imsUser", imsUser);
+		model.addAttribute("action", SAVE_ACTION);
+		buildModel(model, imsUser, SAVE_ACTION);
 		return "imsNewUserForm";
 	}
 
@@ -61,6 +65,21 @@ public class IMSUserController {
 		return "redirect:/ims-user";
 	}
 
+	@RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
+	public String editBankSwiftCode(@PathVariable Long id, Model model, RedirectAttributes redirectAttributes) {
+
+		IMSUser imsUser = imsUserService.getIMSUserById(id);
+
+		logger.info("Loading edit for of IMSUser with the following details : " + imsUser);
+
+		if (imsUser == null) {
+			return "redirect:/ims-user";
+		}
+		buildModel(model, imsUser, UPDATE_ACTION);
+
+		return "imsViewUserForm";
+	}
+
 	@RequestMapping(method = RequestMethod.POST, value = "/update")
 	public String updateIMSUser(IMSUser imsUser) {
 		IMSUser imsUserToUpdate = imsUserService.getIMSUserById(imsUser.getId());
@@ -71,6 +90,11 @@ public class IMSUserController {
 		imsUserService.updateIMSUser(imsUser);
 
 		return "redirect:/view/" + imsUserToUpdate.getId();
+	}
+
+	private void buildModel(Model model, IMSUser imsuser, String action) {
+		model.addAttribute("action", action);
+		model.addAttribute("imsUser", imsuser);
 	}
 
 }

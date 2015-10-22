@@ -45,7 +45,7 @@
 	</select></li>
 	
 	<form:form id="imsUser" modelAttribute="imsUser" 
-		action="${pageContext.servletContext.contextPath}/ims-user/save" method="POST"
+		action="${pageContext.servletContext.contextPath}${action}" method="POST"
 		cssClass="form-user">
 		
 		<ul>
