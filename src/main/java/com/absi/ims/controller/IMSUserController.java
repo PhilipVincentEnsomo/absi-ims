@@ -46,6 +46,7 @@ public class IMSUserController {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/view/{id}")
 	public String loadIMSUserForm(Model model, @PathVariable Long id) {
+		logger.info("Viewing User");
 		IMSUser imsUser = imsUserService.getIMSUserById(id);
 		model.addAttribute("imsUser", imsUser);
 		return "imsViewUserForm";
@@ -60,7 +61,10 @@ public class IMSUserController {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/delete")
 	public String deleteIMSUser(@PathVariable Long id) {
-		IMSUser imsUser = imsUserService.getIMSUserById(id);
+		
+		logger.info("Deleting User");
+		
+		IMSUser imsUser = imsUserService.getIMSUserById(id);		
 		imsUserService.deleteIMSUser(imsUser);
 		return "redirect:/ims-user";
 	}
@@ -77,7 +81,7 @@ public class IMSUserController {
 		}
 		buildModel(model, imsUser, UPDATE_ACTION);
 
-		return "imsViewUserForm";
+		return "imsEditUser";
 	}
 
 	@RequestMapping(method = RequestMethod.POST, value = "/update")

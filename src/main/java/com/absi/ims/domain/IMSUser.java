@@ -62,7 +62,7 @@ public class IMSUser extends Auditable implements Serializable {
 	@Column(name = "address")
 	private String address;
 	
-	@Size(min=1, max=35)
+	@Size(min=1, max=100)
 	@Column(name = "city")
 	private String city;
 	

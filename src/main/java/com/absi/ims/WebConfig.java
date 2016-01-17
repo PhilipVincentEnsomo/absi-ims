@@ -28,6 +28,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/login").setViewName("login");
 		registry.addViewController("/").setViewName("redirect:ims-user");
+		registry.addViewController("/ims-outlet").setViewName("outlet");
 	}
 
 	@Bean

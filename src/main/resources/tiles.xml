@@ -58,6 +58,145 @@
 		
 	</definition>
 	
+	<definition name="imsEditUser" extends="base">
+		<put-attribute name="pageTitle" value="Edit User Details" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-user/edit-user.jsp" />
+		
+	</definition>
+	
+	
+						<!-- THIS IS FOR OUTLET -->
+	
+	<definition name="base-outlet" template="/WEB-INF/views/commons/base-absi-outlet.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="pageTitle" value="" />
+		<put-attribute name="leftMenu" value=""/>
+		<put-attribute name="body" value="" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="footer" value="" />
+		<put-attribute name="topMenu" value="" />
+		
+		<put-list-attribute name="styles">
+			<add-attribute value="/resources/css/style.css" />
+			<add-attribute value="/resources/css/utility.css" />
+			<add-attribute value="/resources/css/bootstrap/bootstrap.min.css" />
+			<add-attribute value="/resources/css/bootstrap/bootstrap-theme.min.css" />
+			<add-attribute value="/resources/css/font-awesome-4.4.0/css/font-awesome.min.css" />
+			<add-attribute value="/resources/css/jquery-ui.css" />
+			<add-attribute value="/resources/css/jquery-ui.structure.css" />
+			<add-attribute value="/resources/css/jquery-ui.theme.css" />
+			<add-attribute value="/resources/css/datepicker.css" />
+			
+					
+		</put-list-attribute>
+		
+		<put-list-attribute name="scripts">
+			<add-attribute value="/resources/js/lib/jquery/1.11.1/jquery.min.js" />
+			<add-attribute value="/resources/js/lib/bootstrap/3.2.0/bootstrap.min.js" />
+			<add-attribute value="/resources/css/jquery-ui/1.11.4/jquery-ui.min.js" />
+			<add-attribute value="/resources/js/lib/underscore/1.8.3/underscore-min.js" />
+			<add-attribute value="/resources/scripts/bootstrap-datepicker.js" />
+		</put-list-attribute>
+	</definition>
+	
+	
+	<definition name="imsOutletList" extends="base-outlet">
+		<put-attribute name="pageTitle" value="List of Outlets" />		
+		<put-attribute name="leftMenu" value="/WEB-INF/views/commons/left-menu-users.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-outlet/list-outlet.jsp" />
+	</definition>
+	
+	
+	<definition name="imsNewOutletForm" extends="base-outlet">
+		<put-attribute name="pageTitle" value="Add Outlet" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-outlet/add-outlet.jsp" />
+		
+	</definition>
+	
+	<definition name="imsViewOutlet" extends="base-outlet">
+		<put-attribute name="pageTitle" value="View Outlet details" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-outlet/view-outlet.jsp" />
+		
+	</definition>
+	
+	<definition name="imsEditOutlet" extends="base-outlet">
+		<put-attribute name="pageTitle" value="Edit Outlet Details" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-user/edit-user.jsp" />
+		
+	</definition>
+
+								<!-- END FOR OUTLET -->	
+	
+	
+								<!-- THIS IS FOR PRODUCT -->
+	
+	<definition name="base-product" template="/WEB-INF/views/commons/base-absi-product.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="pageTitle" value="" />
+		<put-attribute name="leftMenu" value=""/>
+		<put-attribute name="body" value="" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="footer" value="" />
+		<put-attribute name="topMenu" value="" />
+		
+		<put-list-attribute name="styles">
+			<add-attribute value="/resources/css/style.css" />
+			<add-attribute value="/resources/css/utility.css" />
+			<add-attribute value="/resources/css/bootstrap/bootstrap.min.css" />
+			<add-attribute value="/resources/css/bootstrap/bootstrap-theme.min.css" />
+			<add-attribute value="/resources/css/font-awesome-4.4.0/css/font-awesome.min.css" />
+			<add-attribute value="/resources/css/jquery-ui.css" />
+			<add-attribute value="/resources/css/jquery-ui.structure.css" />
+			<add-attribute value="/resources/css/jquery-ui.theme.css" />
+			<add-attribute value="/resources/css/datepicker.css" />
+			
+					
+		</put-list-attribute>
+		
+		<put-list-attribute name="scripts">
+			<add-attribute value="/resources/js/lib/jquery/1.11.1/jquery.min.js" />
+			<add-attribute value="/resources/js/lib/bootstrap/3.2.0/bootstrap.min.js" />
+			<add-attribute value="/resources/css/jquery-ui/1.11.4/jquery-ui.min.js" />
+			<add-attribute value="/resources/js/lib/underscore/1.8.3/underscore-min.js" />
+			<add-attribute value="/resources/scripts/bootstrap-datepicker.js" />
+		</put-list-attribute>
+	</definition>
+	
+	
+	<definition name="imsProductList" extends="base-product">
+		<put-attribute name="pageTitle" value="List of Products" />		
+		<put-attribute name="leftMenu" value="/WEB-INF/views/commons/left-menu-users.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-product/list-product.jsp" />
+	</definition>
+	
+	
+	<definition name="imsNewProductForm" extends="base-product">
+		<put-attribute name="pageTitle" value="Add Product" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-product/add-product.jsp" />
+		
+	</definition>
+	
+	<definition name="imsViewProduct" extends="base-product">
+		<put-attribute name="pageTitle" value="View Product Details" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-product/view-product.jsp" />
+		
+	</definition>
+	
+	<definition name="imsProductUser" extends="base-product">
+		<put-attribute name="pageTitle" value="Edit Product Details" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-user/edit-product.jsp" />
+		
+	</definition>
+	
+								<!-- END FOR PRODUCT -->	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 </tiles-definitions>
 

@@ -5,43 +5,42 @@
     <div class="search-options">
 		<input type="text" class="field">
 		<input type="button" value="Search" class="search-btn button">
-		<input type="button" value="Add" class="btnAdd button" onclick="location.href='${pageContext.request.contextPath}/ims-user/new'">
+		<input type="button" value="Add" class="btnAdd button" onclick="location.href='${pageContext.request.contextPath}/ims-product/new'">
 	</div>
 	
-	<table class="user-list">
+	<table class="product-list">
 	  <tr class="trhead">
-		<td> User Type </td>
-	    <td> Name </td>
-	    <td> Username  </td>
-	    <td> Password  </td>
-	    <td> Contact Number </td>
+		<td> Product Category </td>
+	    <td> SKU </td>
+	    <td> Product Name  </td>
+	    <td> Product Price  </td>
 	    
 	  </tr>
 	  
-		<c:forEach var="user" items="${imsUserList}">
+		<c:forEach var="product" items="${imsProductList}">
 			
 			<tr class="link"> 			
 				<td>Employee</td>
 				
 				<td>	
-					<c:out value="${user.lastname} , ${user.firstname} , ${user.middlename}" />	
+					<c:out value="${product.category}" />	
 					
 					<div class="hidden view-url">
-						<c:url value="/ims-user/view/${user.id}" />
+						<c:url value="/ims-product/view/${product.id}" />
 					
 					</div>
 				</td>
 				
 				<td>	
-					<c:out value="${user.username}" />	
+					<c:out value="${product.SKU}" />	
 				</td>
 				
 				<td>	
-					<c:out value="${user.password}"		/>	
+					<c:out value="${product.productName}"		/>	
 				</td>
 				
 				<td>	
-					<c:out value="${user.contactNumber}" />	
+					<c:out value="${product.productPrice}" />	
 				</td>
 				
 			</tr>
@@ -59,4 +58,3 @@
 		});
 	});
 </script>
-

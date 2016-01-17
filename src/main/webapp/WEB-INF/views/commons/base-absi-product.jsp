@@ -8,7 +8,6 @@
 	<title><tiles:insertAttribute name="title" ignore="false" /></title>
 
 	<script src="${pageContext.request.contextPath}/resources/js/lib/jquery/1.11.1/jquery.min.js" />  </script>
-	<script src="${pageContext.request.contextPath}/resources/scripts/bootstrap-datepicker.js" />  </script>
 	<link rel="stylesheet" type="text/css" src="${pageContext.request.contextPath}/resources/css/style.css" />
 	<link rel="stylesheet" type="text/css" src="${pageContext.request.contextPath}/resources/css/utility.css" /> 
 	<link rel="stylesheet" type="text/css" src="${pageContext.request.contextPath}/resources/css/bootstrap/bootstrap.min.css" />
@@ -36,12 +35,13 @@
 				
 	</div>
 	
-	<div class="user-top-menu">
-		<input type="button" id="btn-user-cancel" value="Cancel" class="btnHeader button" onclick="location.href='${pageContext.request.contextPath}/ims-user'">
-		<input type="button" id="btn-user-edit" value="Edit" class="btnHeader button" onclick="location.href='${pageContext.request.contextPath}/ims-user/edit/{id}'"/>
-		<input type="button" id="btn-user-delete" value="Delete" class="btnHeader button" onclick="deleteDialog()" />	
-		<input type="button" id="btn-user-submit" value="Submit" class="btnHeader button" onclick="saveNewUser()" />
+	<div id="product-top-menu">
+		<input type="button" id="btn-product-cancel" value="Cancel" class="btnHeader button" onclick="location.href='${pageContext.request.contextPath}/ims-user'">
+		<input type="button" id="btn-product-edit" value="Edit" class="btnHeader button" onclick="location.href='${pageContext.request.contextPath}/ims-user/edit/{id}'"/>
+		<input type="button" id="btn-product-delete" value="Delete" class="btnHeader button" onclick="deleteDialog()" />	
+		<input type="button" id="btn-product-submit" value="Submit" class="btnHeader button" onclick="saveNewUser()" />
 	</div>
+	
 	
 	<div class="main-body">
 		<tiles:insertAttribute name="leftMenu" />
@@ -57,14 +57,5 @@
 
 <script type="text/javascript">	
 	
-	function deleteDialog()
-	{
-		document.getElementById("imsUser").remove();
-		alert ("User has been deleted");
-	}
-	
-	
-	var $j = jQuery.noConflict();
-	});
 
 </script>
