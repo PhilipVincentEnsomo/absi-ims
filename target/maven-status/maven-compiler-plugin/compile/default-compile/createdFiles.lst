@@ -1,7 +1,11 @@
+com\absi\ims\domain\IMSOutlet.class
+com\absi\ims\dao\IMSOutletDao.class
+com\absi\ims\controller\IMSOutletController.class
 com\absi\ims\domain\Gender.class
+com\absi\ims\service\IMSOutletServiceImpl.class
 com\absi\ims\domain\Auditable.class
+com\absi\ims\service\IMSOutletService.class
 com\absi\ims\dao\IMSUserDao.class
-com\absi\ims\domain\Outlet.class
 com\absi\ims\WebConfig.class
 com\absi\ims\domain\IMSUser.class
 com\absi\ims\service\IMSUserServiceImpl.class

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <html lang="en">
 
@@ -27,9 +28,9 @@
 					<li><a href="${pageContext.request.contextPath}/ims-user/new">Create New User</a></li>
 					-->
 					
-					<li class="active"><a href="${pageContext.request.contextPath}/ims-user">Users</a></li>
-					<li><a href="list-products.html">Product</a></li>
-					<li><a href="list-outlets.html">Outlet</a></li>
+					<li><a href="${pageContext.request.contextPath}/ims-user">Users</a></li>
+					<li><a href="${pageContext.request.contextPath}/ims-outlet">Outlet</a></li>
+					<li><a href="${pageContext.request.contextPath}/ims-product">Product</a></li>
 					<li><a href="">Inventory</a></li>
 					<li><a href="">Reports</a></li>
 					
@@ -42,3 +43,9 @@
 
 </body>
 </html>
+
+<script type="text/javascript">	
+
+
+
+</script>

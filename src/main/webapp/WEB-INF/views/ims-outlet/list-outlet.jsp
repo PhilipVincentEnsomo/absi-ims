@@ -5,43 +5,46 @@
     <div class="search-options">
 		<input type="text" class="field">
 		<input type="button" value="Search" class="search-btn button">
-		<input type="button" value="Add" class="btnAdd button" onclick="location.href='${pageContext.request.contextPath}/ims-user/new'">
+		<input type="button" value="Add" class="btnAdd button" onclick="location.href='${pageContext.request.contextPath}/ims-outlet/new'">
 	</div>
 	
-	<table class="user-list">
+	<table class="outlet-list">
 	  <tr class="trhead">
-		<td> User Type </td>
-	    <td> Name </td>
-	    <td> Username  </td>
-	    <td> Password  </td>
+		<td> Outlet Name </td>
 	    <td> Contact Number </td>
+		<td> Outlet Address </td>
+	    <td> City </td>
+		<td> Postal Code </td>
 	    
 	  </tr>
 	  
-		<c:forEach var="user" items="${imsUserList}">
+		<c:forEach var="outlet" items="${imsOutletList}">
 			
 			<tr class="link"> 			
-				<td>Employee</td>
-				
+			
 				<td>	
-					<c:out value="${user.lastname} , ${user.firstname} , ${user.middlename}" />	
+					<c:out value="${outlet.outletname}" />	
 					
 					<div class="hidden view-url">
-						<c:url value="/ims-user/view/${user.id}" />
+						<c:url value="/ims-outlet/view/${outlet.id}" />
 					
 					</div>
 				</td>
 				
 				<td>	
-					<c:out value="${user.username}" />	
+					<c:out value="${outlet.contactNumber}"		/>
 				</td>
 				
 				<td>	
-					<c:out value="${user.password}"		/>	
+					<c:out value="${outlet.address}" />	
 				</td>
 				
 				<td>	
-					<c:out value="${user.contactNumber}" />	
+					<c:out value="${outlet.city}"		/>	
+				</td>
+				
+				<td>	
+					<c:out value="${outlet.postalCode}" />	
 				</td>
 				
 			</tr>
@@ -59,4 +62,3 @@
 		});
 	});
 </script>
-

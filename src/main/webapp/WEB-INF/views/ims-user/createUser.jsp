@@ -34,9 +34,6 @@
 
 <body>
 
-	<input type="button" value="Cancel" class="btnHeader button" onclick="location.href='${pageContext.request.contextPath}/ims-user'">
-	<input type="button" value="Submit" class="btnHeader button" onclick="saveNewUser()">
-
 	<li><label><strong> User Type </strong></label>:<select>
 			<option></option>
 			<option>Admin</option>
@@ -44,9 +41,7 @@
 			<option>Client</option>
 	</select></li>
 	
-	<form:form id="imsUser" modelAttribute="imsUser" 
-		action="${pageContext.servletContext.contextPath}${action}" method="POST"
-		cssClass="form-user">
+	<form:form id="imsUser" modelAttribute="imsUser" action="${pageContext.servletContext.contextPath}${action}" method="POST" cssClass="form-user">
 		
 		<ul>
 			<li><label><strong> Username </strong></label>:<form:input
@@ -60,12 +55,7 @@
 			<li><label><strong> Last Name </strong></label>:<form:input
 					type="text" path="lastname" /></li>
 			<li><label><strong> Contact Number </strong></label>:<form:input
-				type="text" path="contactNumber"/></li>
-			
-			<li><label><strong> Birthday </strong></label>:<input
-				type="text" id="birthDate-dp"/></li>	
-			
-			
+				type="text" path="contactNumber"/></li>			
 			<li><label><strong> E-mail Address </strong></label>:<form:input
 					type="text" path="emailAddress" /></li>
 			<li><label><strong> Address </strong></label>:<form:input
@@ -81,6 +71,7 @@
 
 </body>
 </html>
+
 
 <script type="text/javascript">
 
@@ -108,9 +99,11 @@ $j(document).ready(function () {
 
 </script>
 
-
 <!-- 			<li><label for="Gender"><strong> Gender </strong></label>:<select> -->
 <!-- 					<option></option> -->
 <!-- 					<option>Female</option> -->
 <!-- 					<option>Male</option> -->
 <!-- 			</select></li> -->
+<!-- <li><label><strong> Birthday </strong></label>:<input
+				type="text" id="birthDate-dp"/></li> 
+				
