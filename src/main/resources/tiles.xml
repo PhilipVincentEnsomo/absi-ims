@@ -121,7 +121,7 @@
 	
 	<definition name="imsEditOutlet" extends="base-outlet">
 		<put-attribute name="pageTitle" value="Edit Outlet Details" />
-		<put-attribute name="body" value="/WEB-INF/views/ims-user/edit-user.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/ims-outlet/edit-outlet.jsp" />
 		
 	</definition>
 

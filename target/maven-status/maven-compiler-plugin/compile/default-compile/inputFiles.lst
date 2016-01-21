@@ -1,9 +1,11 @@
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\domain\Auditable.java
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\service\IMSUserServiceImpl.java
+c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\service\IMSProductServiceImpl.java
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\WebConfig.java
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\domain\Gender.java
+c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\domain\IMSProduct.java
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\controller\IMSUserController.java
-c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\domain\Product.java
+c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\dao\IMSProductDao.java
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\controller\IMSOutletController.java
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\service\IMSOutletServiceImpl.java
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\dao\IMSOutletDao.java
@@ -11,5 +13,7 @@ c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\service\
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\service\IMSOutletService.java
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\AbsiImsApplication.java
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\domain\IMSUser.java
+c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\controller\IMSProductController.java
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\dao\IMSUserDao.java
 c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\domain\IMSOutlet.java
+c:\Users\Dianne\Documents\workspace\absi-ims\src\main\java\com\absi\ims\service\IMSProductService.java
