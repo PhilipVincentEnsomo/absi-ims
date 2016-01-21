@@ -79,7 +79,7 @@ public class IMSProductController {
 		if (imsProduct == null) {
 			return "redirect:/ims-product";
 		}
-		buildModel(model, imsOutlet, UPDATE_ACTION);
+		buildModel(model, imsProduct, UPDATE_ACTION);
 
 		return "imsEditProduct";
 	}
